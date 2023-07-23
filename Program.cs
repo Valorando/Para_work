@@ -20,3 +20,17 @@
 Реализуйте возможность удаления счетов.
 Добавьте проверку на недостаточность средств при списании.
 Обеспечьте валидацию вводимых данных пользователя и информативные сообщения об ошибках.*/
+
+class BankAccount
+{
+    public int Number { get; set; }
+    public int Balance { get; set; }
+    public string Owner { get; set; }
+
+    public BankAccount(int number, string owner)
+    {
+        Number = number;
+        Balance = 0;
+        Owner = owner;
+    }
+}
